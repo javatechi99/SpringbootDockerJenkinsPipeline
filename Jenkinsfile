@@ -27,7 +27,7 @@ pipeline {
         }
         stage('build & SonarQube Analysis'){
             steps{
-              withSonarQubeEnv('sonarqubejavatechiscanner'){
+              withSonarQubeEnv('sonarqubescannernew'){
               bat 'mvn clean package sonar:sonar'
             }
 }
